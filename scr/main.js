@@ -12,8 +12,9 @@
 
         
 var animation = document.getElementById("animation")
-animation.src = "img/opening.gif"+"?a="+Math.random();
 animation.onload = runTimer();
+animation.src = "img/opening.gif"+"?a="+Math.random();
+
 
 function runAction(seconds){
     switch(seconds) {
@@ -27,7 +28,7 @@ function runAction(seconds){
           moveHeaderUp()
           break;
         default:
-        console.log('its more than 2')
+        // console.log('its more than 2')
       }
 }
 
