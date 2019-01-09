@@ -1,8 +1,9 @@
 (function() {
 
-    var seconds = 0
+    
 
-    function runTimer() {  
+    function runTimer() { 
+        var seconds = 0
           window.setInterval(function() {
            seconds++
            console.log(seconds)
