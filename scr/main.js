@@ -11,9 +11,9 @@
         }
 
         
-var animation = document.getElementById("animation")
-animation.onload = runTimer;
-animation.src = "img/opening.gif"+"?a="+Math.random();
+// var animation = document.getElementById("animation")
+// animation.onload = runTimer;
+// animation.src = "img/opening.gif"+"?a="+Math.random();
 
 
 function runAction(seconds){
@@ -48,9 +48,18 @@ function moveHeaderUp() {
     header.classList.add('move-up')
 }
 
+var aud = document.getElementById("titlemp4");
+aud.addEventListener('ended', function() {
+    runTimer();
+})
+
+
+
+
 
 })()
     
+
 
 
 
