@@ -12,19 +12,19 @@
 
         
 var animation = document.getElementById("animation")
-animation.onload = runTimer();
+animation.onload = runTimer;
 animation.src = "img/opening.gif"+"?a="+Math.random();
 
 
 function runAction(seconds){
     switch(seconds) {
-        case 5:
+        case 1:
             showMercs()
           break;
-        case 6:
+        case 2:
             showArrows()
           break;
-          case 8:
+          case 5:
           moveHeaderUp()
           break;
         default:
