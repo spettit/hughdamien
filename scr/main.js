@@ -11,7 +11,7 @@
           }, 1000);
         }
 
-        
+        runTimer()
 // var animation = document.getElementById("animation")
 // animation.onload = runTimer;
 // animation.src = "img/opening.gif"+"?a="+Math.random();
@@ -49,10 +49,10 @@ function moveHeaderUp() {
     header.classList.add('move-up')
 }
 
-var aud = document.getElementById("titlemp4");
-aud.addEventListener('ended', function() {
-    runTimer();
-})
+// var aud = document.getElementById("titlemp4");
+// aud.addEventListener('ended', function() {
+//     runTimer();
+// })
 
 
 
