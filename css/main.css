@@ -27,24 +27,49 @@ header {
   transition: transform 300ms ease-in-out 0s;
 }
 
-.visible {
+.be-visible {
   opacity: 1;
 }
 
 #title-blue {
   transition: opacity 2000ms ease-in 0s;
-  -webkit-transition: opacity 1000ms ease-in 0s;
+  /* -webkit-transition: opacity 1000ms ease-in 0s; */
 }
 
 #title-black {
   transition: opacity 1000ms ease-in 0s;
-  -webkit-transition: opacity 1000ms ease-in 0s;
+  /* -webkit-transition: opacity 1000ms ease-in 0s; */
 }
 
-.invisible {
-  opacity: 0.1;
+.be-invisible {
+  opacity: 0;
 }
 
 .move-up {
   transform: translate(0, -200px) scale(0.5, 0.5);
+}
+
+/* title-block classes -------------------- */
+
+#title-block {
+  transition: all 1000ms ease-in-out 0s;
+}
+
+.be-centered {
+  transform: translate(0, 300px);
+}
+
+.positionOne {
+  transform: translate(0, 100px) scale(0.5, 0.5);
+}
+
+/* mercs classes -------------------- */
+#mercs {
+  transition: opacity 500ms ease-in-out 0s;
+}
+
+/* scroll arrow classes -------------------- */
+
+#scroll-arrows {
+  transition: opacity 500ms ease-in-out 0s;
 }

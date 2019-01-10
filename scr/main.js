@@ -1,54 +1,62 @@
 (function() {
 
-    
+    var titleBlue = document.getElementById('title-blue')
+    var titleBlack = document.getElementById('title-black')
+    var titleBlock = document.getElementById('title-block')
+    var mercs = document.getElementById('mercs');
+    var scrollArrows = document.getElementById('scroll-arrows');
 
-    function runTimer() { 
-        var seconds = 0
-          window.setInterval(function() {
-           seconds++
-           console.log(seconds)
-           runAction(seconds)
-          }, 1000);
-        }
+  function runTimer() {
+    var seconds = 0;
+    window.setInterval(function() {
+      seconds++;
+      console.log(seconds);
+      runAction(seconds);
+    }, 1000);
+  }
 
-        runTimer()
-// var animation = document.getElementById("animation")
-// animation.onload = runTimer;
-// animation.src = "img/opening.gif"+"?a="+Math.random();
+ 
+
+  function runAction(seconds) {
+    switch (seconds) {
+      case 1:
+        showElement(titleBlue);
+        break;
+      case 3:
+        showElement(titleBlack);
+        break;
+    case 5:
+        moveTitleUpOne()
+        break;
+        case 6:
+        showElement(mercs);
+        break;
+        case 7:
+        showElement(scrollArrows);
+        break;
+        case 9:
+        hideElement(scrollArrows);
+        break;
+      default:
+    }
+  }
+
+  function showElement(el) {
+    el.classList.remove("be-invisible");
+    el.classList.add("be-visible");
+  }
+
+  function hideElement(el) {
+    el.classList.remove("be-visible");
+    el.classList.add("be-invisible");
+  }
+
+  function moveTitleUpOne() {
+    titleBlock.classList.remove('be-centered')
+    titleBlock.classList.add('positionOne')
+  }
 
 
-function runAction(seconds){
-    switch(seconds) {
-        case 1:
-            showElement('title-blue')
-          break;
-        case 2:
-        showElement('title-black')
-          break;
-        default:
-        // console.log('its more than 2')
-      }
-}
+  runTimer();
 
-function showElement(name) {
-    var el = document.getElementById(name);
-    el.classList.remove('invisible');
-    el.classList.add('visible');
-}
-
-
-// var vid = document.getElementById("titlemp4");
-// vid.addEventListener('ended', function() {
-//     runTimer();
-// })
-
-// showBlueTitle()
-
-
-
-})()
-    
-
-
-
-
+})();
