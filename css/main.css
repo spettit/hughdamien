@@ -27,9 +27,18 @@ header {
   transition: transform 300ms ease-in-out 0s;
 }
 
-.make-visible {
+.visible {
   opacity: 1;
-  transition: opacity 500ms ease-in 0s;
+}
+
+#title-blue {
+  transition: opacity 2000ms ease-in 0s;
+  -webkit-transition: opacity 1000ms ease-in 0s;
+}
+
+#title-black {
+  transition: opacity 1000ms ease-in 0s;
+  -webkit-transition: opacity 1000ms ease-in 0s;
 }
 
 .invisible {

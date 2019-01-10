@@ -24,23 +24,29 @@
     <div class="container">
       <header>
         <!-- <div id="animation-div"><img id="animation" alt="logo" /></div> -->
-        <video id="titlemp4" muted playsinline>
+        <!-- <video id="titlemp4" muted playsinline>
           <source src="img/title.mp4" type="video/mp4" />
-        </video>
-        <!-- <div id="title">
-          <img
-            id="title black"
-            alt="title"
-            src="img/titletopblack.png"
-            style="width: 100%"
-          />
-          <img
-            id="title blue"
-            alt="title"
-            src="img/titletopblue.png"
-            style="width: 100%; transform: translate(0, -100%)"
-          />
-        </div> -->
+          Your browser does not support video
+        </video> -->
+        <div id="title-wrapper" style="transform: translate(0, 300px)">
+          <div id="title">
+            <img
+              class="invisible"
+              id="title-black"
+              alt="title"
+              src="img/titletopblack.png"
+              style="width: 100%"
+            />
+            <img
+              class="invisible"
+              id="title-blue"
+              alt="title"
+              src="img/titletopblue.png"
+              style="width: 100%; position: relative; transform: translate(0, -100%);"
+            />
+          </div>
+        </div>
+
         <img
           id="mercs"
           class="invisible"
