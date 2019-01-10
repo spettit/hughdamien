@@ -11,7 +11,7 @@
           }, 1000);
         }
 
-        runTimer()
+        // runTimer()
 // var animation = document.getElementById("animation")
 // animation.onload = runTimer;
 // animation.src = "img/opening.gif"+"?a="+Math.random();
@@ -50,9 +50,11 @@ function moveHeaderUp() {
 }
 
 var vid = document.getElementById("titlemp4");
-vid.play();
+vid.addEventListener('ended', function() {
+    runTimer();
+})
 
-
+vid.play()
 
 
 
