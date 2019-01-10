@@ -49,10 +49,8 @@ function moveHeaderUp() {
     header.classList.add('move-up')
 }
 
-// var aud = document.getElementById("titlemp4");
-// aud.addEventListener('ended', function() {
-//     runTimer();
-// })
+var vid = document.getElementById("titlemp4");
+vid.play();
 
 
 
